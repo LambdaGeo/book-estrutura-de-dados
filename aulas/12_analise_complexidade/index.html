@@ -2441,10 +2441,10 @@
 <a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a><span class="w">        </span><span class="n">v2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="p">;</span>
 <a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a>
-<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Ordenando com Bubble Sort (N=%d)...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Ordenando com Bubble Sort (N=%d)...</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
 <a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="w">    </span><span class="n">bubble_sort</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
 <a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a>
-<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Ordenando com Quick Sort (N=%d)...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Ordenando com Quick Sort (N=%d)...</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
 <a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a><span class="w">    </span><span class="n">quick_sort</span><span class="p">(</span><span class="n">v2</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
 <a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a>
 <a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a><span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">v1</span><span class="p">);</span>
@@ -2455,23 +2455,23 @@
 <h3 id="script-de-analise-completa-analisesh">Script de Análise Completa (<code>analise.sh</code>)<a class="headerlink" href="#script-de-analise-completa-analisesh" title="Permanent link">&para;</a></h3>
 <p>Você pode usar um script automatizado para compilar e analisar:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/bash</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 1. COMPILANDO PARA COBERTURA (GCOV) ===&quot;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"=== 1. COMPILANDO PARA COBERTURA (GCOV) ==="</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>gcc<span class="w"> </span>-O0<span class="w"> </span>-g<span class="w"> </span>--coverage<span class="w"> </span>ordenacao.c<span class="w"> </span>-o<span class="w"> </span>prog_cov
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 2. EXECUTANDO COBERTURA ===&quot;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"=== 2. EXECUTANDO COBERTURA ==="</span>
 <a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>./prog_cov
 <a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 3. GERANDO RELATÓRIO GCOV ===&quot;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"=== 3. GERANDO RELATÓRIO GCOV ==="</span>
 <a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>gcov<span class="w"> </span>ordenacao.c
 <a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>cat<span class="w"> </span>ordenacao.c.gcov<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">35</span>
 <a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 4. COMPILANDO PARA PROFILE (GPROF) ===&quot;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"=== 4. COMPILANDO PARA PROFILE (GPROF) ==="</span>
 <a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>gcc<span class="w"> </span>-O2<span class="w"> </span>-pg<span class="w"> </span>ordenacao.c<span class="w"> </span>-o<span class="w"> </span>prog_prof
 <a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 5. EXECUTANDO PROFILE ===&quot;</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"=== 5. EXECUTANDO PROFILE ==="</span>
 <a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>./prog_prof
 <a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
-<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 6. GERANDO GRAFO DE CHAMADAS ===&quot;</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"=== 6. GERANDO GRAFO DE CHAMADAS ==="</span>
 <a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>gprof<span class="w"> </span>prog_prof<span class="w"> </span>gmon.out<span class="w"> </span>&gt;<span class="w"> </span>relatorio_gprof.txt
 <a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>head<span class="w"> </span>-n<span class="w"> </span><span class="m">25</span><span class="w"> </span>relatorio_gprof.txt
 </code></pre></div>

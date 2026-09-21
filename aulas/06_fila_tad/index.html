@@ -2874,7 +2874,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cm">/* fila_estatica.c */</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;fila.h&quot;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"fila.h"</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="cp">#define MAX 100</span>
 <a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
@@ -2944,7 +2944,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cm">/* fila_encadeada.c */</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;fila.h&quot;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"fila.h"</span>
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">no</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">valor</span><span class="p">;</span>
@@ -3125,7 +3125,7 @@
 <a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>│ • Vetor + inicio + fim + n          │
 <a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>│ • Avanço: (index + 1) % MAX         │
 <a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>│ • Cuidado: distinguir vazia de cheia│
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>│   (usar contador &#39;n&#39; ajuda)         │
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>│   (usar contador 'n' ajuda)         │
 <a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>├─────────────────────────────────────┤
 <a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>│ IMPLEMENTAÇÃO DINÂMICA              │
 <a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>│ • Nós encadeados                    │
@@ -3139,7 +3139,7 @@
 <a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>├─────────────────────────────────────┤
 <a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>│ ERROS COMUNS                        │
 <a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>│ □ Esquecer o módulo % na estática   │
-<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>│ □ Não atualizar &#39;fim&#39; na dinâmica   │
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>│ □ Não atualizar 'fim' na dinâmica   │
 <a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>│ □ Acessar frente() sem checar vazia │
 <a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>│ □ Confundir índices de inicio/fim   │
 <a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>└─────────────────────────────────────┘

@@ -2322,7 +2322,7 @@ n \times (n-1)! &amp; \text{se } n &gt; 0
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>}
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>int main() {
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    printf(&quot;Fatorial de 4: %d\n&quot;, fat(4)); // Imprime 24
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    printf("Fatorial de 4: %d\n", fat(4)); // Imprime 24
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    return 0;
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>}
 </code></pre></div>
@@ -2364,8 +2364,8 @@ n \times (n-1)! &amp; \text{se } n &gt; 0
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    int lista_teste[] = {1, 2, 32, 8, 17, 19, 42, 13, 0};
 <a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    int tamanho = 9;
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    printf(&quot;Encontrou o 3? %d\n&quot;, busca_sequencial(lista_teste, tamanho, 3));  // 0 (False)
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    printf(&quot;Encontrou o 13? %d\n&quot;, busca_sequencial(lista_teste, tamanho, 13)); // 1 (True)
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    printf("Encontrou o 3? %d\n", busca_sequencial(lista_teste, tamanho, 3));  // 0 (False)
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    printf("Encontrou o 13? %d\n", busca_sequencial(lista_teste, tamanho, 13)); // 1 (True)
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>    return 0;
 <a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>}
 </code></pre></div>
@@ -2425,8 +2425,8 @@ Contudo, se os nossos dados estiverem <strong>ordenados</strong> (ex: ordem alfa
 <a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    // A LISTA DEVE ESTAR ORDENADA
 <a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    int lista_teste[] = {0, 1, 2, 8, 13, 17, 19, 32, 42};
 <a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    printf(&quot;Busca Binaria 3: %d\n&quot;, busca_binaria_iterativa(lista_teste, 9, 3));  // 0
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    printf(&quot;Busca Binaria 13: %d\n&quot;, busca_binaria_iterativa(lista_teste, 9, 13)); // 1
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    printf("Busca Binaria 3: %d\n", busca_binaria_iterativa(lista_teste, 9, 3));  // 0
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    printf("Busca Binaria 13: %d\n", busca_binaria_iterativa(lista_teste, 9, 13)); // 1
 <a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>    return 0;
 <a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>}
 </code></pre></div>
@@ -2436,9 +2436,9 @@ A cada chamada, o "estado modificado" é a redução do intervalo de busca (<cod
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>#include &lt;stdio.h&gt;
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>#include &lt;stdbool.h&gt;
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>// Aqui recebemos os índices &#39;primeiro&#39; e &#39;ultimo&#39; em vez do tamanho total
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>// Aqui recebemos os índices 'primeiro' e 'ultimo' em vez do tamanho total
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>bool busca_binaria_recursiva(int lista[], int primeiro, int ultimo, int item) {
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    // 1. Caso base: A lista &quot;esvaziou&quot; (os limites se cruzaram)
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    // 1. Caso base: A lista "esvaziou" (os limites se cruzaram)
 <a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    if (primeiro &gt; ultimo) {
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        return false;
 <a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    }
@@ -2463,7 +2463,7 @@ A cada chamada, o "estado modificado" é a redução do intervalo de busca (<cod
 <a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>int main() {
 <a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>    int lista[] = {0, 1, 2, 8, 13, 17, 19, 32, 42};
 <a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>    // Passamos índice inicial (0) e final (tamanho-1 = 8)
-<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>    printf(&quot;Busca Recursiva 13: %d\n&quot;, busca_binaria_recursiva(lista, 0, 8, 13));
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>    printf("Busca Recursiva 13: %d\n", busca_binaria_recursiva(lista, 0, 8, 13));
 <a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>    return 0;
 <a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>}
 </code></pre></div>
